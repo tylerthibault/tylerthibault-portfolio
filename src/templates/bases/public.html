@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler Thibault</title>
+
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrapcss/bootstrap.min.css') }}">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+
+    {% block style %}
+        
+    {% endblock style %}
+</head>
+<body>
+    {% block page_wrapper %}
+        
+        {% block content %}
+            
+        {% endblock content %}
+
+    {% endblock page_wrapper %}
+
+
+    <script src="{{ url_for('static', filename='js/bootstrapjs/bootstrap.bundle.min.js') }}"></script>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+
+    {% block scripts %}
+        
+    {% endblock scripts %}
+</body>
+</html>

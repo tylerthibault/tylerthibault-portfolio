@@ -1,0 +1,32 @@
+{% extends 'bases/public.html' %}
+
+{% block content %}
+<div class="scroll-progress"></div>
+<div class="scanline"></div>
+<div class="grid-background"></div>
+<div class="code-rain"></div>
+
+<section id="hero">
+    {% include 'public/landing/components/hero.html' %}
+</section>
+
+<section id="about">
+    {% include 'public/landing/components/about.html' %}
+</section>
+
+<section id="skills">
+    {% include 'public/landing/components/skills.html' %}
+</section>
+
+<section id="metrics">
+    {% include 'public/landing/components/metrics.html' %}
+</section>
+
+<section id="projects">
+    {% include 'public/landing/components/projects.html' %}
+</section>
+
+<section id="contact">
+    {% include 'public/landing/components/contact.html' %}
+</section>
+{% endblock content %}
